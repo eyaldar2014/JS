@@ -34,12 +34,13 @@ var
 let
 
 //declare a variable and reassign a value to it
-let a=5
-a=6
+let a = 5 ;
+a = 6 ;
 
 //create a variable and after that assign a string with its value being: He's got it!
 
 let Var = "He's got it!" ;
+
 
 /*
 1. create a variable and assign a value on how much a restaurant bill is.
@@ -47,10 +48,10 @@ let Var = "He's got it!" ;
 3. create a variable that will calculate the bill * tax and its output would be: Your total bill is <total bill> $.
  */
 
-let restaurant_bill = 20;
+let restaurantBill = 20;
 let tax = 20;
-let total_bill= tax * restaurant_bill;
-let result = "Your total bill is" + total_bill;
+let totalBill= tax * restaurantBill;
+let result = "Your total bill is " + totalBill;
 
 
 // Round the number 50.6 to its nearest integer
@@ -59,4 +60,4 @@ let nearest_integer = Math.round(50.6)
 
 //Create a variable that is undefined
 
-led und = undefined;
+let und = undefined;
