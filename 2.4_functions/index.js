@@ -1,6 +1,6 @@
-function current (){
+function current (a, b, c, d){
 
-  // let current = "Today is Sunday the 31 of January, 2021" ;
+  let current = "Today is " +a+ " the " +b+ " of " +c+ ", " +d ;
   return current
 }
 
@@ -15,5 +15,5 @@ let monthNumber = months[day.getMonth()] ;
 
 let currentYear = day.getFullYear()
 
-
-console.log(currentYear) ; 
+result = current(dayName, monthlyDayNumber, monthNumber, currentYear)
+console.log(result) ; 
