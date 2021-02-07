@@ -22,4 +22,3 @@ const und = undefined;
 
 let symbol = Symbol('$');
 
-console.log(symbol);
