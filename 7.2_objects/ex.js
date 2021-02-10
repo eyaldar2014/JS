@@ -6,24 +6,33 @@
 
 
 mycountry = {
-  country : 'Austrslia' ,
-  capital : 'Weird' ,
-  language: 'English' ,
-  population: '22 million' ,
-  neighbours: [] ,
-  describe(){
-    console.log('Finland has ', this.population ,'people, their mother tongue is', this.language ,', they have', 
-    this.neighbours.length ,'neighbouring countries and a capital called', this.capital)
-  } ,
-  checkIsland(isIsland){
+  
+  country: 'Austrslia',
+
+  capital: 'Weird',
+
+  language: 'English',
+
+  population: '22 million',
+
+  neighbours: [],
+
+  describe() {
+    console.log('Finland has ', this.population, 'people, their mother tongue is', this.language, ', they have',
+      this.neighbours.length, 'neighbouring countries and a capital called', this.capital)
+  },
+
+  checkIsland(isIsland) {
     isIsland = (isIsland ? this.neighbours.length = 0 : this.neighbours.length > 0)
     console.log(isIsland)
+
   },
-  checkIsland2(mycountry){
+  checkIsland2(mycountry) {
     isIsland = (mycountry ? this.neighbours.length = 0 : this.neighbours.length > 0)
     console.log(isIsland)
   },
 }
+
 
 
 
@@ -32,10 +41,12 @@ mycountry = {
 mycountry.describe()
 
 
-// 4. Add a method called 'checkIsland' to the 'myCountry' object. This method will -----se a new property on the object------, called 'isIsland'.
+// 4. Add a method called 'checkIsland' to the 'myCountry' object. This method will -----set a new property on the object------, called 'isIsland'.
 // 'isIsland' will be true if there are no neighbouring countries, and false if there are. Use the ternary operator to set the property.
 
 mycountry.checkIsland()
 
 // more elegant :
 mycountry.checkIsland2()
+
+console.log(mycountry)
