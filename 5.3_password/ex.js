@@ -1,8 +1,4 @@
 
-
-
-
-
 // Use only a ternary conditional expression.
 
 
