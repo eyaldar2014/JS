@@ -23,7 +23,7 @@ const arrayLength = (array) =>{
   return n
 }
 
-arrayLength(arr)
+console.log(arrayLength([1,1,1,1]))
 
 
 // 3. Create function “arraySum” , the function return the sum of all elements in array.
