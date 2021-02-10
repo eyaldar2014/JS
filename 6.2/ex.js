@@ -38,10 +38,14 @@ console.log(people)
 
 // 6. Using a loop, iterate through this array and after console.log-ing "Mary", exit from the loop.
 
-for (i=0 ; people.length > i ; i++){
+const maryIndex = people.findIndex(element => element === "Mary");
+
+console.log(maryIndex)
+
+for (i=0 ; i < maryIndex + 1 ; i++){
   if (people[i] === 'Mary'){
     console.log(people[i])
-    { break; }
+
   }
 }
 
