@@ -30,3 +30,6 @@ for (let [mapKey, value] of people) {
   console.log(Object.values(mapKey) + ' = ' + Object.values(value))
 
 }
+
+
+console.log(people)
