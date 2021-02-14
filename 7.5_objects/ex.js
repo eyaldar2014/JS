@@ -20,6 +20,8 @@ let newString = array.join('')
 
 newString = newString.toLowerCase();
 
+
+// space = '\s'
 newString = newString.replace(/\s/g, '');
 
 newArray = newString.split("");
