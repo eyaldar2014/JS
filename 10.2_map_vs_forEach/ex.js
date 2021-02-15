@@ -14,8 +14,8 @@ const doubleValues = (array) => {
   return newArray
 }
 
-let result = doubleValues([1 ,1 ,20 , 'a'])
-console.log(result)
+// let result = doubleValues([1 ,1 ,20 , 'a'])
+// console.log(result)
 
 
 // 2. Write a function called onlyEvenValues which accepts an array and returns a new array with 
@@ -43,17 +43,20 @@ const onlyEvenValues = (array) => {
 const showFirstAndLast = (array) => {
 
   let newArray = []
+  let index = 0
+
   array.forEach(element => {
-    if (typeof element === 'string') {
-      newArray.push(element)
+    if (typeof element === 'string' && (index === 0 || index === array.length -1)) {
+      newArray.push(array[index])
     }
 
+    index = index + 1
   })
 
   return newArray
 }
 
-// let result = showFirstAndLast([1 ,1 ,2 , 4, 5,'a' , 'b'])
+// let result = showFirstAndLast([4 , 'a' , 1 ,1 ,2 , 4, 5,'a' , 'b' , 4])
 // console.log(result)
 
 
