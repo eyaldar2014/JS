@@ -13,7 +13,8 @@ const school = {
   subjects: ["history", "ethics"], 
   students: [],
   capacityLeft: 2,
-  }, ],
+  },
+],
 
   students: [
   {
@@ -49,7 +50,7 @@ school.assignStudent = function (studentsId , subject) {
   let student = this.students.filter(a => a.id === studentsId)
   student = student[0]
 
-  let teacherIndex =  this.teachers.indexOf(teacher)
+  let teacherIndex = this.teachers.indexOf(teacher)
   if (this.teachers[teacherIndex].capacityLeft !== 0){
     this.teachers[teacherIndex].students.push(student)
     this.teachers[teacherIndex].capacityLeft--
@@ -104,3 +105,5 @@ school.mySchool = function (studentID , free) {
 };
 
 // school.mySchool(11 , true)
+
+console.log(school)
