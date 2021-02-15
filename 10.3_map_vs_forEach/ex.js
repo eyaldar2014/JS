@@ -147,9 +147,9 @@ const differentFoods = (array) =>{
       answer[finalArray[i]]++
     }
   }
-  
+
   console.log(answer)
 }
 
 
-differentFoods(data)
+// differentFoods(data)
