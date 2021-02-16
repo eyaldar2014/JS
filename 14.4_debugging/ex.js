@@ -5,7 +5,7 @@ function calcAverage (arr){
     sum += arr[ i ];
   }
 
-  return sum ;
+  return sum / arr.length ;
   }
 
   calcAverage ([ 85 , 90 , 92 ]);
