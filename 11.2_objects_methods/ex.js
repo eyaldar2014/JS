@@ -59,12 +59,12 @@ school.assignStudent = function (studentsId , subject) {
     console.log('Sorry, no available teachers left')  
   }
 
-  console.log('teacher :')
-  console.log(teacher.name)
-  console.log('students :')
-  console.log(this.teachers[teacherIndex].students)
-  console.log('capacity left :')
-  console.log(this.teachers[teacherIndex].capacityLeft)
+  // console.log('teacher :')
+  // console.log(teacher.name)
+  // console.log('students :')
+  // console.log(this.teachers[teacherIndex].students)
+  // console.log('capacity left :')
+  // console.log(this.teachers[teacherIndex].capacityLeft)
 };
 
 // school.assignStudent(11 , 'history')
@@ -106,4 +106,4 @@ school.mySchool = function (studentID , free) {
 
 // school.mySchool(11 , true)
 
-console.log(school)
+// console.log(school)

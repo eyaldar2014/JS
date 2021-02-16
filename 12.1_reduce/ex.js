@@ -3,6 +3,7 @@
 // 1. max
 
 const array = [220, -20 , 10, 39, 1, 5, 55, 1, 89, 100, 1]
+const array2 = [1, 2]
 
 
 let arrayMax = array.reduce(function(acc, value) {
@@ -17,14 +18,14 @@ let arrayMax = array.reduce(function(acc, value) {
 
 // 2. sum of even numbers
 
-let sumEven = array.reduce(function(acc, value) {
+let sumEven = array2.reduce(function(acc, value) {
   if (value % 2 === 0) {
-    return acc = value + acc
+    return acc = value + acc 
   }
   return acc
-})
+},0)  // initialize so that : acc = 0 - - - -  otherwise , the acc will defaultly be counted as 'index 0' - the first element of the array
 
-// console.log(sumEven)
+console.log(sumEven)
 
 
 // 3. average
