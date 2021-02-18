@@ -1,19 +1,19 @@
 
 // Block 1
 
-// function funcA() {
+function funcA() {
 
-//   console.log(a);
-//   console.log(foo());
+  console.log(a);
+  console.log(foo());
   
-  // var a = 1;
+  var a = 1;
 
-//   function foo() {
-//     return 2;
-//   }
-// }
+  function foo() {
+    return 2;
+  }
+}
 
-// funcA();
+funcA();
 
 // the output is undefined ; 2 ; because var is declared but has no value yet . and the function is 
 // initialized first inside the function and can be called anytime.
