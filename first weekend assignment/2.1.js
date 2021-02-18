@@ -5,14 +5,12 @@
 
 function answer(array) {
 
-  let newArray = array.filter(element => element > 0 && element % 1 === 0)
-
-  newArray = newArray.sort(function (a, b) { return a - b })
+  let newArray = array.filter(element => element > 0 && element % 1 === 0).sort(function (a, b) { return a - b })
 
   return (newArray[0] + newArray[1])
 
 }
 
-let array = [3, 5, 6, 34746135, 345643, 0.1, 0.11, -12, -12.1, 4]
+let array = [3, 5, 6, 34746135, 345643, 0.1, 0.11, -12, -12.1, 1]
 
 console.log(answer(array))
