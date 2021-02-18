@@ -13,7 +13,7 @@ function short(str){
     }
   }
 
-  return array[array.length -1]
+  return (array[array.length -1]).length
 }
 
-console.log(short('sdhf a dsfiasbdijfabdsijfg8347t ruwbejvf!!! basdjafdsj asd'))
+console.log(short('sdhf aa dsfiasbdijfabdsijfg8347t ruwbejvf!!! basdjafdsj asd'))
