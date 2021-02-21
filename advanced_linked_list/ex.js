@@ -35,7 +35,6 @@ class LinkedList {
     }
 
     this.size++
-    console.log(this.size)
   }
 
   getFirst() {
@@ -86,9 +85,10 @@ class LinkedList {
         current = current.next
       }
     }
-    return 'no'
+    return 'not exist'
   }
 
+  // for check
   addCircular(element){
     let node = new Node(element)
     let current = this.head.next.next.next.next.next.next
@@ -120,7 +120,7 @@ class LinkedList {
     let output = 'head =>'
 
     while (current) {
-      output = output + current.toString()
+      output += current.toString()
       current = current.next
     }
 
@@ -142,6 +142,7 @@ list.addLast(9)
 
 // console.log(list.getFirst())
 // console.log(list.getLast())
+// console.log(list.size)
 // console.log(list.toString())
 // list.reverse()
 // list.removeKNode(4)
