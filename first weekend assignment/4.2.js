@@ -19,4 +19,4 @@ function tribonacci(array , n) {
 }
 
 
-console.log(tribonacci([1,2,3] , 30))
+console.log(tribonacci([1,2,3] , 10))
