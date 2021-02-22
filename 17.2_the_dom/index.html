@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>18.1</title>
+  <title>17.2</title>
 
 
   <style>
@@ -39,9 +39,14 @@
 
     }
 
-    .small-container{
+    .small-container {
       display: flex;
       align-items: center;
+    }
+
+    #counter{
+      margin-right: 20px;
+      margin-left: 20px;
     }
 
   </style>
@@ -59,12 +64,12 @@
     <div class="small-container">
       <input type="button" value="check" class="btn" onclick="countChar('text-box')">
 
+      <div id="counter"></div>
       <div id="response"></div>
     </div>
   </div>
 
 
-  <div id="div1"></div>
 
 
 
@@ -72,26 +77,36 @@
   <script>
 
     function countChar(id) {
-
       let item = document.getElementById(id).value;
-      array = item.split(" ")
+      let array = item.split(" ")
 
       if (array.length < 100) {
         addNoNoDiv()
       }
-      else{
+      else {
         addYesYesDiv()
       }
     }
 
-    function addNoNoDiv (){
-      document.getElementById('response').innerHTML = 'not enough characters, only ' + array.length;
+    function addNoNoDiv() {
+      document.getElementById('response').innerHTML = 'not enough characters';
     }
-    
-    function addYesYesDiv (){
+
+    function addYesYesDiv() {
       document.getElementById('response').innerHTML = 'very good !';
     }
 
+    function getEventType(event) {
+      let item = document.getElementById('text-box').value;
+      let array = item.split(" ")
+
+      let counter = document.getElementById('counter');
+      counter.innerHTML = array.length + ' characters';
+
+      document.getElementById('response').innerHTML = '';
+    }
+
+    document.addEventListener('keyup', getEventType, false);
 
   </script>
 

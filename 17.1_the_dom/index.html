@@ -40,11 +40,11 @@
 <body>
 
 
-  <input type="button" value="+" class="btn plus" onclick="increaseFontSize('text' , 5)">
+  <input type="button" value="+" class="btn plus" onclick="increaseFontSize('text' , 5) , changeBgColor()">
 
   <div id="text" class="text">BATATA</div>
 
-  <input type="button" value="-" class="btn minus" onclick="increaseFontSize('text' , -5)">
+  <input type="button" value="-" class="btn minus" onclick="increaseFontSize('text' , -5) , changeBgColor2()">
 
   <script>
 
@@ -58,6 +58,13 @@
       }
     }
 
+    function changeBgColor() {
+      let text = document.getElementById('text').style.backgroundColor = 'blue'
+    }
+
+    function changeBgColor2() {
+      let text = document.getElementById('text').style.backgroundColor = 'green'
+    }
 
   </script>
 
