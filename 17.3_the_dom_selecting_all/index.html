@@ -10,14 +10,10 @@
 
 <body>
 
-
   <div id="myFirstDiv"></div>
   <div id="mySecondDiv"></div>
   <div id="myThridDiv"></div>
   <div id="myFourthDiv"></div>
-
-
-
 
   <script>
     // const myFirstDiv = document.querySelector("#myFirstDiv");
@@ -26,11 +22,15 @@
     // const myFourthDiv = document.querySelector("#myFourthDiv");
 
     const x = document.querySelectorAll("div");
-    console.log(x[0])
-    console.log(x[1])
-    console.log(x[2])
-    console.log(x[3])
+    // console.log(x[0])
+    // console.log(x[1])
+    // console.log(x[2])
+    // console.log(x[3])
 
+    x.forEach(element => {
+      console.log(element)
+    });
+    
   </script>
 
 </body>

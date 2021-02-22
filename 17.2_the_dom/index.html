@@ -44,11 +44,9 @@
       align-items: center;
     }
 
-    #counter{
+    #counter {
       margin-right: 20px;
-      margin-left: 20px;
     }
-
   </style>
 
 </head>
@@ -69,18 +67,13 @@
     </div>
   </div>
 
-
-
-
-
-
   <script>
 
     function countChar(id) {
+      
       let item = document.getElementById(id).value;
-      let array = item.split(" ")
 
-      if (array.length < 100) {
+      if (item.length < 100) {
         addNoNoDiv()
       }
       else {
@@ -96,12 +89,11 @@
       document.getElementById('response').innerHTML = 'very good !';
     }
 
-    function getEventType(event) {
+    function getEventType() {
       let item = document.getElementById('text-box').value;
-      let array = item.split(" ")
 
       let counter = document.getElementById('counter');
-      counter.innerHTML = array.length + ' characters';
+      counter.innerHTML = item.length + ' characters';
 
       document.getElementById('response').innerHTML = '';
     }
