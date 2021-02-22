@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>17.1</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      display: flex;
+    }
+
+    .btn {
+      height: 100px;
+      width: 100px;
+      background-color: blue;
+      font-size: 50px;
+      text-align: center;
+      margin: 100px;
+    }
+
+    .text {
+      align-self: center;
+      font-size: 50px;
+    }
+    
+  </style>
+
+
+</head>
+
+<body>
+
+
+  <input type="button" value="+" class="btn plus" onclick="increaseFontSize('text' , 5)">
+
+  <div id="text" class="text">BATATA</div>
+
+  <input type="button" value="-" class="btn minus" onclick="increaseFontSize('text' , -5)">
+
+  <script>
+
+    function increaseFontSize(id, increaseFactor) {
+      txt = document.getElementById(id);
+      style = window.getComputedStyle(txt, null).getPropertyValue('font-size');
+      currentSize = parseFloat(style);
+      txt.style.fontSize = (currentSize + increaseFactor) + 'px';
+      if ((currentSize + increaseFactor) > 100 || (currentSize + increaseFactor) < 6) {
+        txt.style.fontSize = currentSize + 'px';
+      }
+    }
+
+
+  </script>
+
+</body>
+
+</html>
