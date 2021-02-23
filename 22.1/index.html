@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="index.js" defer></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 65vh;
+    }
+    
+    .container{
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+    }
+    #btn{
+      width: 160px;
+      height: 30px;
+      font-size: 20px;
+      background-color: lightcoral;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Create a webpage that has a form (asks the user for its name, age and email address) -->
+  <h1>Form</h1>
+
+  <div id="head"></div>
+
+  <div class="container">
+    
+    
+    <label>Name:</label>
+    <input type="name"  name="name" value="name" id="name">
+    <br><label>Age:</label>
+    <input type="text" name="age" value="age" id="age">
+    <br><label>Email:</label>
+    <input type="email" name="email" value="email" id="email">
+    <br><label>Submit:</label>
+    <input type="button" value="Review" id="btn" onclick="clicK()">
+  </div>
+
+
+</body>
+
+</html>
