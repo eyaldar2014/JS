@@ -12,6 +12,7 @@
 
 // Question 2:
 // a. In your own words what will this point to and why. b. How can you fix this code.
+
 // const myObj = {
 //   name: "Timmy",
 //   greet: function () {
@@ -20,7 +21,7 @@
 // }
 // myObj.greet();
 
-//google:'In an arrow function, this does not refer to the owner of the function'. but why?
+// google:'In an arrow function, this does not refer to the owner of the function'. but why?
 // nested functions
 
 // Question 3:
@@ -64,12 +65,12 @@
 //  });
 
 
-const storm = {
-  superPower: 'flying',
-}
-function printSuperPower() {
-  console.log("my superpower is " + this.superPower);
-}
-storm.newKey = printSuperPower
-storm.newKey()
+// const storm = {
+//   superPower: 'flying',
+// }
+// function printSuperPower() {
+//   console.log("my superpower is " + this.superPower);
+// }
+// storm.newKey = printSuperPower
+// storm.newKey()
 
