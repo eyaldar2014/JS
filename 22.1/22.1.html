@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form id="form" onsubmit="return func();">
+    name : <input id="name" type="text"/><br/>
+    age : <input id="age" type="number" min="14"/><br/>
+    email : <input id="email" type="email"/><br/>
+    <button id="click" type="submit">submit</button>
+</form>
+
+
+<script>
+    const click = document.querySelector('#click');
+    const name = document.querySelector('#name');
+    const age = document.querySelector('#age');
+    const email = document.querySelector('#email');
+    const form = document.querySelector('#form');
+
+
+    function func() {
+        console.log("start")
+        if (name.value.length < 2) return false;
+        else if (age.value < 18) return false;
+        console.log("is true;")
+        return true;
+    }
+
+</script>
+</body>
+
+</html>

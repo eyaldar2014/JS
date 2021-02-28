@@ -6,6 +6,8 @@ const btn = document.querySelector("#btn")
 
 aSecond()
 
+// setInterval(aSecond , 1)
+
 function aSecond() {
 
   if(btn.innerHTML === 'start'){
@@ -18,14 +20,18 @@ function aSecond() {
 
   newValue += 1
   if (newValue < 10) {
+    newValue = '00' + newValue.toString()
+  }
+  else if (newValue < 100) {
     newValue = '0' + newValue.toString()
   }
 
-  else if (newValue === 60) {
-    newValue = '00'
+  else if (newValue === 1000) {
+    newValue = '000'
 
     minuteValue += 1
   }
+
   if (minuteValue < 10) {
     minuteValue = '0' + minuteValue.toString()
   }
@@ -40,7 +46,7 @@ function aSecond() {
   }
 
   else if (hourValue === 60) {
-    hourValue = '00'
+    // hourValue = '00'
     return
   }
 
