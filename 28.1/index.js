@@ -11,15 +11,14 @@ const hero = {
 
 function whoIsStronger(getStrength) {
   const myStrength = 82;
-  console.log(getStrength()) // added for check
+  // console.log(getStrength()) // added for check
   if (getStrength() < myStrength) {
     return "I am stronger";
   }
   else return "You are stronger";
 }
 
-hero.newFunction = whoIsStronger
-hero.whoIsStronger.call(hero.getStrength)
+console.log(whoIsStronger(hero.getStrength.bind(hero)))
 
 //cant solve it without touching the clousers of getStronger inside the function whoIsStronger
 // solved !!!

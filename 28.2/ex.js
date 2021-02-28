@@ -2,10 +2,10 @@
 let david = {
   name: 'David',
   print: function (){
-    console.log(david.name)
+    console.log(this.name)
   },
   printDelay: function (){
-    setTimeout(this.print, 1000)
+    setTimeout(this.print.bind(david), 1000)
   }
 }
 
