@@ -1,5 +1,8 @@
 const getIDs = () =>
   new Promise((resolve, reject) => {
+
+    // reject()
+
     setTimeout(() => {
       resolve([532, 543, 753, 1, 5]);
     }, 1500);
@@ -30,17 +33,23 @@ getIDs().then((IDs) => {
     console.log("It is an error!");
   });
 
-async function asyncCall() {
-  let IDs
-  IDs = await getIDs()
-  console.log(IDs)
-  let recipe
-  recipe = await getRecipe(IDs[2])
-  console.log(recipe)
 
-  // if (!recipe) {
-  //   console.log('its an error')
-  // }
+
+
+
+async function asyncCall() {
+
+  try {
+    let IDs = await getIDs()
+    console.log(IDs)
+    let recipe = await getRecipe(IDs[2])
+    console.log(recipe)
+  }
+  catch (err){
+    console.log("It is an error!");
+    // console.log(err);
+  }
 }
+
 
 asyncCall()
