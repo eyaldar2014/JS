@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>17.2</title>
+    <!--    <script src="../17.2-text_area/index.js"></script>-->
+</head>
+<style>
+    .red {
+        color: red;
+    }
+
+    .green {
+        color: green;
+    }
+</style>
+<body>
+<!--option1-->
+<!--<p>some text</p>-->
+<!--<h1>some text</h1>-->
+<!--<textarea id="ta" name="ta" rows="4" cols="50">-->
+<!--</textarea>-->
+<!--<br/>-->
+<!--<input id="btnClick" type="button" value="Click Here!">-->
+<!--<input onclick="myFunction()" type="button" value="Click Here!">-->
+<!--<button>Click Here!</button>-->
+<!--option2-->
+<h1>some text</h1>
+<textarea id="ta" onkeydown="textChange()" name="ta" rows="4" cols="50"></textarea>
+<br/>
+<input id="btnClick" disabled="disabled" type="buton" value="Click Here!">
+<label class="red" id="length">0/10</label>
+</body>
+<script>
+    //option 1
+    // document.getElementById("ta").value = "this is a test2";
+    //
+    // function myFunction() {
+    //     let text = document.getElementById("ta").value;
+    //     // console.log("the text is :",text.length)
+    //     if (text.length > 99) {
+    //         alert('ok')
+    //     } else {
+    //         alert('enter more text')
+    //     }
+    // }
+    //
+    // document.getElementById("btnClick").addEventListener('click', myFunction);
+
+
+    //option2
+
+    let text = "";
+    const arr = [{name : 'ag',age :32},{name: 'avi',age:123}];
+
+    function textChange() {
+       console.log("arr :",arr)
+        let length = document.getElementById("ta").value.length;
+        if (length < 11) {
+            text = document.getElementById("ta").value;
+        }
+        document.getElementById("ta").value = text;
+
+        document.getElementById('length').innerHTML = `${length}/10`
+        console.log("the length is : ", length)
+        if (length > 10) {
+            document.getElementById("btnClick").removeAttribute('disabled')
+            document.getElementById('length').className = "green"
+        } else {
+            document.getElementById("btnClick").setAttribute('disabled', 'disabled');
+        }
+        // document.getElementById("btnClick").setAttribute('disabled','disabled');
+
+    }
+
+
+</script>
+</html>

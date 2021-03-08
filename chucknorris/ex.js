@@ -120,6 +120,7 @@ async function allCategoriesPictures() {
     return '<option>' + cate + '</option>'
   })
   pictureCategory.innerHTML = allOptions
+
 }
 
 //button random picture
